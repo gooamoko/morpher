@@ -53,7 +53,7 @@ public class Morpher {
     try {
       DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
       DocumentBuilder builder = factory.newDocumentBuilder();
-      // TODO Может стоит сделать замену пробелов спецсимволами
+      // TODO Может стоит сделать замену пробелов спецсимволами?
       doc = builder.parse(link + word);
     } catch (IOException | ParserConfigurationException | SAXException e) {
       throw new MorpherException(e.getMessage());
